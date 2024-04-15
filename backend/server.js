@@ -50,10 +50,10 @@ app.use('/api/message', msgRoutes)
 // --------------------------deployment------------------------------
 
 
+
 const server = app.listen(PORT, () => {
     console.log(`the app is running on ${PORT}`);
 })
-
 
 
 const io = new Server(server, {
