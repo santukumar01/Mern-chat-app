@@ -1,19 +1,3 @@
-{
-    // app.get('/', (req, res) => {
-    //     res.send("this is app");
-    // })
-
-    // app.get('/api/chat', (req, res) => {
-    //     res.send(data)
-    // })
-
-    // app.get('/api/chat/:id', (req, res) => {
-    //     // console.log(req.params.id);
-    //     const userId = req.params.id;
-    //     const singleData = data.find(u => u.id == userId);
-    //     res.send(singleData);
-    // })
-}
 
 import dotenv from "dotenv"
 dotenv.config();
