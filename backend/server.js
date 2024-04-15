@@ -19,8 +19,7 @@ const app = express();   //express() is a function inside Express module
 app.use(express.json()); // to accept json data from fonrtend
 
 const PORT = process.env.PORT || 3000;
-
-
+const __dirname = path.resolve();
 
 app.use('/api/user', userRouter)
 app.use('/api/chat', chatRouter)
@@ -29,11 +28,13 @@ app.use('/api/message', msgRoutes)
 
 // --------------------------deployment------------------------------
 
+app.use(express.static(path.join(__dirname, 'frontend/dist')))
 
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
+})
 
 // --------------------------deployment------------------------------
-
-
 
 const server = app.listen(PORT, () => {
     console.log(`the app is running on ${PORT}`);

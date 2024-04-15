@@ -5,9 +5,9 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon backend/server.js",
-    "server": "node backend/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "build": "npm install && npm install --force --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [],
   "author": "",
