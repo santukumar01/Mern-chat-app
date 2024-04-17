@@ -21,7 +21,7 @@ import Lottie from "react-lottie"
 import animationdata from './animation/typing.json'
 
 import io from "socket.io-client";
-const ENDPOINT = "http://localhost:3000";   // backend server
+const ENDPOINT = "https://mern-chat-app-q2n6.onrender.com/";   // backend server
 
 var socket, selecteChatCompare;
 
