@@ -138,7 +138,7 @@ const SideDrawer = () => {
                     </Button>
                 </Tooltip>
                 <Text fontSize="2xl" fontFamily="Work sans">
-                    Lets - Connect-again
+                    Lets - Connect- Again
                 </Text>
                 <div>
 
